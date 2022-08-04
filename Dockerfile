@@ -28,13 +28,14 @@ RUN npm install onesignal-ngx
 
 
 #RUN npm i @angular-devkit/build-angular@0.901.13
-RUN npm run build
+#RUN npm run build
 
 # Expose the port the app runs in
 EXPOSE 4200
 
 # Serve the app
-CMD ["ng", "serve","--host","0.0.0.0"]
+CMD ["npm", "start"]
+#CMD ["ng", "serve","--host","0.0.0.0"]
 
 #Stage 2
 #FROM nginx:alpine
